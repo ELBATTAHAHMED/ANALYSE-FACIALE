@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Face detection on the browser using javascript !</title>
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <title>ANALYSE FACIALE</title>
+  <link rel="icon" href="REMOTE SETTINGS.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css?v=3">
+  <script defer src="./face-api.min.js?v=1"></script>
+  <script defer src="./script.js?v=3"></script>
 </head>
+
 <body>
-  <header>
-    <h2 class="logo"><img src="REMOTE SETTINGS.png" width="35%" height="25%" /></h2>
-</header>
-  <video id="video" width="691" height="640" autoplay>
+  <main class="hero" id="demo">
+    <section class="hero-content">
+      <div class="hero-top">
+        <img class="hero-logo" src="REMOTE SETTINGS.png" alt="Analyse Faciale logo">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Live emotion intelligence
+        </div>
+      </div>
+      <h1>Real-time emotion detection with a clean, private flow.</h1>
+      <p>
+        Allow camera access and stay centered. Everything runs locally in your browser.
+      </p>
+      <div class="hero-actions">
+        <a class="cta primary" href="#demo">Start scan</a>
+        <a class="cta ghost" href="#steps">View steps</a>
+      </div>
+      <div class="steps" id="steps">
+        <div class="step-card">
+          <div class="step-icon">01</div>
+          <h3>Capture</h3>
+          <p>Frame your face inside the guide to begin detection.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon">02</div>
+          <h3>Analyze</h3>
+          <p>Expressions are tracked in real time.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-icon">03</div>
+          <h3>Report</h3>
+          <p>See the overlay results instantly on screen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-visual">
+      <div class="scan-card">
+        <div class="scan-header">
+          <span class="scan-title">Live Analysis</span>
+          <span class="scan-status"><span></span>Active</span>
+        </div>
+        <div class="scan-viewport" id="video-wrap">
+          <video id="video" width="691" height="640" autoplay muted playsinline></video>
+          <div class="scan-grid"></div>
+          <div class="scan-line"></div>
+          <span class="scan-corner tl"></span>
+          <span class="scan-corner tr"></span>
+          <span class="scan-corner bl"></span>
+          <span class="scan-corner br"></span>
+        </div>
+      </div>
+
+    </section>
+  </main>
 </body>
+
 </html>

@@ -1,0 +1,55 @@
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs
+.idea/
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+*.so
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+.env/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+
+# PHP
+vendor/
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Logs & temp files
+*.log
+*.tmp
+*.swp
+
+# Environment files (keep samples)
+.env.*
+!.env.example
