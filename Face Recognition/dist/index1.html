@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANALYSE FACIALE</title>
+    <link rel="icon" href="Untitled design (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css?v=2" onerror="this.onerror=null;this.href='/ANALYSE-FACIALE/Face%20Recognition/dist/style.css?v=2';">
+    <script type="module" src="register.js" defer></script>
+    <script type="module" src="login.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <img src="REMOTE SETTINGS.png" alt="Analyse Faciale logo">
+            <span class="brand-name">Analyse Faciale</span>
+        </div>
+        <nav class="navigation">
+            <a class="nav-link" href="#steps">How it works</a>
+            <a class="cta primary" href="auth-signin.php">Login</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section class="hero-content">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Live biometric intelligence
+            </div>
+            <h1>Modern facial analysis for secure access and attendance</h1>
+            <p>
+                Accelerate identity verification with a clean workflow, liveness detection, and
+                real-time tracking. Built to stay fast, accurate, and privacy-first.
+            </p>
+            <div class="hero-actions">
+                <a class="cta primary" href="auth-signin.php">Start scan</a>
+                <a class="cta ghost" href="#steps">View steps</a>
+            </div>
+            <div class="steps" id="steps">
+                <div class="step-card">
+                    <div class="step-icon"><ion-icon name="scan-outline" aria-hidden="true"></ion-icon></div>
+                    <h3>Capture</h3>
+                    <p>Frame the face inside the guide to begin a fast scan.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon"><ion-icon name="eye-outline" aria-hidden="true"></ion-icon></div>
+                    <h3>Verify</h3>
+                    <p>Run liveness checks and match against registered profiles.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon"><ion-icon name="analytics-outline" aria-hidden="true"></ion-icon></div>
+                    <h3>Report</h3>
+                    <p>Export attendance and access logs instantly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero-visual">
+            <div class="scan-card">
+                <div class="scan-header">
+                    <span class="scan-title">Live Analysis</span>
+                    <span class="scan-status"><span></span>Active</span>
+                </div>
+                <div class="scan-viewport" aria-hidden="true">
+                    <img class="scan-image" src="Resources/face.png" alt="Facial scan" loading="lazy" decoding="async">
+                    <div class="scan-grid"></div>
+                    <div class="scan-line"></div>
+                    <span class="scan-corner tl"></span>
+                    <span class="scan-corner tr"></span>
+                    <span class="scan-corner bl"></span>
+                    <span class="scan-corner br"></span>
+                </div>
+                <div class="scan-metrics">
+                    <div class="metric">
+                        <span>Match rate</span>
+                        <strong>98.7%</strong>
+                    </div>
+                    <div class="metric">
+                        <span>Liveness</span>
+                        <strong>Stable</strong>
+                    </div>
+                    <div class="metric">
+                        <span>Latency</span>
+                        <strong>120 ms</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-card">
+                <div class="status-row">
+                    <span>Detection model</span>
+                    <strong>FaceNet v2</strong>
+                </div>
+                <div class="status-row">
+                    <span>Quality score</span>
+                    <strong>High</strong>
+                </div>
+                <div class="status-row">
+                    <span>Session</span>
+                    <strong>Secured</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

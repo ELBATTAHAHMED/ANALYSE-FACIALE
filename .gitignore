@@ -37,13 +37,6 @@ pnpm-debug.log*
 .pnpm-store/
 .npm/
 
-# PHP
-vendor/
-
-# Build artifacts
-dist/
-build/
-coverage/
 
 # Logs & temp files
 *.log
